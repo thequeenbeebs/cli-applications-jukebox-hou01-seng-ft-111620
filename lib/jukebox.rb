@@ -54,13 +54,13 @@ def run (songs)
   until input == "exit" do
     if input == "help"
       help
-      run (songs)
+      input = gets.strip
     elsif input == "list"
       list (songs)
-      run (songs)
+      input = gets.strip
     elsif input == "play"
       play (songs)
-      run (songs)
+      input = gets.strip
     end
   end
 end

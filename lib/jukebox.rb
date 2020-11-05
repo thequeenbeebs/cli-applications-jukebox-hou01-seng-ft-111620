@@ -51,13 +51,10 @@ def run (songs)
   until input == "exit" do
     if input == "help"
       help
-      puts "Please enter a command:"
     elsif input == "list"
       list (songs)
-      puts "Please enter a command:"
     elsif input == "play"
       play (songs)
-      puts "Please enter a command:"
     end
   end
   if input == "exit"

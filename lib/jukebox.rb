@@ -31,7 +31,7 @@ def play (songs)
   input = gets.strip
   song_selection = ""
   songs.each_with_index do |song, index|
-    if input.to_i == index + 1 || input == songs
+    if input.to_i == index + 1 || input == song
       song_selection = song
       puts "Playing #{song}"
     end

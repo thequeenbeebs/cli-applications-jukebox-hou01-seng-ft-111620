@@ -48,6 +48,7 @@ end
 def run (songs)
   puts "Please enter a command:"
   input = gets.strip
+  binding.pry
   until input == "exit" do
     if input == "help"
       help
